@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Route</title>
+  </head>
+  <body>
+    <h1>Admin Route</h1>
+    <form method="POST" action="/admin">
+      <label> clump_thickness(From: 1-10)</label>
+      <input type="number" name="input1" placeholder="clump_thickness" /><br />
+      <label> uniformity_cell_size (From: 1-10)</label>
+      <input
+        type="number"
+        name="input2"
+        placeholder="uniformity_cell_size"
+      /><br />
+      <label> uniformity_cell_shape (From: 1-10)</label>
+      <input
+        type="number"
+        name="input3"
+        placeholder="uniformity_cell_shape"
+      /><br />
+      <label> bare_nuclei (From: 1-10)</label>
+      <input type="number" name="input2" placeholder="bare_nuclei" /><br />
+      <label> bland_chromatin (From: 1-9)</label>
+      <input type="number" name="input3" placeholder="bland_chromatin" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    My Prediction: {{predict}}
+  </body>
+</html>
